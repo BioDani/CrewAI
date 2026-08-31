@@ -1,4 +1,9 @@
-# CrewAI
+![Logo](images/logo_crewai)
+
+## Presentado por
+
+- Juan Diaz
+- Daniel Tejada
 
 ## 1. Descripción general del framework
 
