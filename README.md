@@ -732,6 +732,38 @@ La idea central puede resumirse en:
 
 Por esta razón, CrewAI resulta especialmente adecuado para aplicaciones donde una tarea compleja puede dividirse en diferentes roles y donde varios agentes necesitan colaborar para alcanzar un resultado.
 
+## Implementación
+
+Este proyecto implementa una solución de IA multiagente utilizando ***CrewAI*** de manera 100% local a través de Ollama. Su objetivo es generar artículos técnicos estructurados a partir de la colaboración entre dos agentes especializados.
+
+### Componentes del proyecto:
+
+- **agents.py (Definición de Agentes):** Instancia a los trabajadores virtuales asignándoles roles, objetivos y sus respectivos LLMs locales:
+
+    - Investigador de Mercado Tecnológico: Utiliza el modelo ollama/gemma4:e2b para analizar tendencias y extraer información relevante de tecnologías emergentes.
+
+    - Redactor de Contenido Técnico: Utiliza el modelo ollama/mistral para transformar la investigación técnica en resúmenes ejecutivos claros y aptos para todo público.
+
+- **tasks.py (Definición de Tareas):** Asigna las responsabilidades específicas, la descripción de las actividades que debe realizar cada agente y la estructura del resultado esperado.
+
+- main.py (Orquestación y Ejecución): Inicializa el Crew, define un proceso de ejecución secuencial (donde el producto del Investigador se pasa automáticamente como contexto al Redactor) y dispara el proceso (crew.kickoff()) para entregar el informe final.
+- **main.py (Orquestación y Ejecución):** Inicializa el Crew, define un proceso de ejecución secuencial (donde el producto del Investigador se pasa automáticamente como contexto al Redactor) y dispara el proceso (crew.kickoff()) para entregar el informe final.
+
+
+```mermaid
+flowchart TD
+    A[main.py<br/>Crew] --> B[agents.py<br/>Agents]
+    A --> C[tasks.py<br/>Tasks]
+    
+    B --> D[Agentes definidos<br/>Role / Goal / Backstory]
+    C --> E[Tareas definidas<br/>Description / Expected Output]
+
+    D --> F[Ejecución de Crew<br/>crew.kickoff]
+    E --> F
+
+    F --> G[Resultado final]
+```
+
 
 ## Referencias
 
