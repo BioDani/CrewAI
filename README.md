@@ -732,9 +732,11 @@ La idea central puede resumirse en:
 
 Por esta razón, CrewAI resulta especialmente adecuado para aplicaciones donde una tarea compleja puede dividirse en diferentes roles y donde varios agentes necesitan colaborar para alcanzar un resultado.
 
-## Implementación
+## Implementación de código
 
 Este proyecto implementa una solución de IA multiagente utilizando ***CrewAI*** de manera 100% local a través de Ollama. Su objetivo es generar artículos técnicos estructurados a partir de la colaboración entre dos agentes especializados.
+
+El codigo puede consultarse directamente en el directorio [project](./project).
 
 ### Componentes del proyecto:
 
