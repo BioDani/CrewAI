@@ -255,15 +255,6 @@ Para aplicaciones más grandes, el `Flow` puede utilizarse como capa superior de
 
 # 4. Gestión de memoria
 
-CrewAI proporciona mecanismos de **memoria** para que los agentes puedan conservar y reutilizar información.
-
-La memoria puede ser útil para mantener:
-
-* Información de conversaciones anteriores.
-* Información relevante de tareas anteriores.
-* Contexto.
-* Información sobre entidades.
-* Datos que pueden ser reutilizados posteriormente.
 
 Conceptualmente:
 
@@ -280,61 +271,32 @@ Conceptualmente:
                     plazo
 ```
 
-Por ejemplo:
-
-```text
-Interacción 1:
-
-Usuario:
-"Mi empresa utiliza Python."
+CrewAI cuenta con un sistema de **memoria unificada** gestionado a través de la clase `Memory`. Este sistema reemplaza los esquemas tradicionales de memoria a corto/largo plazo por una API que clasifica, almacena y recupera información mediante análisis por LLM y puntuación adaptativa.
 
 
-Interacción 2:
+Por defecto, los agentes de IA funcionan de forma aislada sin recordar interacciones anteriores. La **memoria en CrewAI** introduce un sistema multinivel que permite a los agentes:
+* **Aprender** de ejecuciones previas.
+* **Retener** contexto durante y entre tareas.
+* **Mejorar** su rendimiento y precisión con el tiempo.
 
-Usuario:
-"¿Qué lenguaje utilizamos?"
+---
 
-Agente:
-"Python..."
-```
+## Tipos de Memoria en CrewAI
 
-La segunda respuesta puede beneficiarse de información almacenada previamente.
+CrewAI organiza la memoria en **cuatro capas principales**:
 
-## Memoria vs. estado del Flow
+| Tipo de Memoria | Descripción | Tecnología / Almacenamiento |
+| :--- | :--- | :--- |
+| **Corto Plazo (Short-Term)** | Guarda el contexto inmediato de la tarea actual. | Búsqueda semántica (Embeddings / Vector DB) |
+| **Largo Plazo (Long-Term)** | Almacena aprendizajes y lecciones entre distintas sesiones. | Base de datos SQLite |
+| **De Entidad (Entity)** | Guarda detalles sobre personas, organizaciones o conceptos clave. | Grafos de conocimiento / Embeddings |
+| **Contextual** | Mantiene la coherencia combinando historial e interacciones. | Contexto dinámico en el prompt |
 
-Es importante diferenciar estos dos conceptos.
-
-### Memoria
-
-Permite conservar información que puede ser reutilizada posteriormente.
-
-### Estado del Flow
-
-Permite mantener información necesaria durante la ejecución de un workflow.
-
-Por ejemplo:
-
-```python
-from pydantic import BaseModel
-
-
-class Estado(BaseModel):
-    tema: str = ""
-    investigacion: str = ""
-    resultado: str = ""
-```
-
-El estado puede utilizarse para compartir información entre diferentes pasos del workflow.
-
-En términos simples:
-
-```text
-Memoria
-→ Información que se conserva y puede reutilizarse.
-
-Estado
-→ Información necesaria para controlar una ejecución.
-```
+## Modos de Uso
+1. **Autónomo (Standalone):** En scripts o notebooks sin necesidad de agentes.
+2. **Tripulaciones (Crews):** Compartida entre todos los agentes (`memory=True`).
+3. **Agentes:** Vistas o ámbitos privados restringidos por agente.
+4. **Flujos (Flows):** Uso nativo dentro de métodos mediante `self.remember()` y `self.recall()`.
 
 ---
 
