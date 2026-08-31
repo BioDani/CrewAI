@@ -1,0 +1,252 @@
+(venv) (base) daniel@Daniels-MacBook-Air CrewAI % python ./project/main.py
+### Iniciando la ejecución con Llama3 y Mistral mediante Ollama ###
+
+╭─────────────────────────────────────────────────────────────────────────── 🚀 Crew Execution Started ────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Crew Execution Started                                                                                                                                                          │
+│  Name: crew                                                                                                                                                                      │
+│  ID: 30c10431-e68a-4d0b-8aab-3440a025c441                                                                                                                                        │
+│                                                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────── 📋 Task Started ─────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Task Started                                                                                                                                                                    │
+│  Name: Investiga las principales ventajas de ejecutar modelos de lenguaje (LLMs)                                                                                                 │
+│      de forma local frente al uso de APIs en la nube. Considera aspectos como privacidad,                                                                                        │
+│      costo, latencia y control.                                                                                                                                                  │
+│  ID: 10763b11-b8b2-43a5-9925-c3fbc572a717                                                                                                                                        │
+│                                                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────── 🤖 Agent Started ────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Agent: Investigador de Mercado Tecnológico                                                                                                                                      │
+│                                                                                                                                                                                  │
+│  Task: Investiga las principales ventajas de ejecutar modelos de lenguaje (LLMs)                                                                                                 │
+│      de forma local frente al uso de APIs en la nube. Considera aspectos como privacidad,                                                                                        │
+│      costo, latencia y control.                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+[Finalize] todos_count=0, todos_with_results=0
+╭───────────────────────────────────────────────────────────────────────────── ✅ Agent Final Answer ──────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Agent: Investigador de Mercado Tecnológico                                                                                                                                      │
+│                                                                                                                                                                                  │
+│  Final Answer:                                                                                                                                                                   │
+│  Como Investigador de Mercado Tecnológico, a continuación, presento un resumen estructurado de las principales ventajas y desafíos de ejecutar Modelos de Lenguaje (LLMs) de     │
+│  forma local (on-premise) en comparación con el uso de APIs en la nube.                                                                                                          │
+│                                                                                                                                                                                  │
+│  ---                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│  ## Ventajas y Desafíos de Ejecutar LLMs Localmente vs. Usar APIs en la Nube                                                                                                     │
+│                                                                                                                                                                                  │
+│  La decisión entre ejecutar un LLM localmente y utilizar servicios basados en API en la nube depende del equilibrio que se busque entre la eficiencia operativa, la seguridad    │
+│  de los datos y la escalabilidad.                                                                                                                                                │
+│                                                                                                                                                                                  │
+│  ### ✅ Ventajas Clave de los LLMs Locales (Beneficios)                                                                                                                          │
+│                                                                                                                                                                                  │
+│  Los beneficios principales de la ejecución local se centran en la autonomía, la seguridad y la personalización del sistema.                                                     │
+│                                                                                                                                                                                  │
+│  **1. Privacidad y Seguridad de los Datos (Privacy & Security)**                                                                                                                 │
+│  *   **Control Total de Datos:** Los datos sensibles nunca abandonan el entorno de la organización. Esto es crucial para cumplir con regulaciones estrictas como GDPR, HIPAA, o  │
+│  políticas internas de seguridad.                                                                                                                                                │
+│  *   **Minimización de Riesgos:** Se reduce el riesgo asociado a la transmisión de datos a terceros (proveedores de la nube), mitigando vulnerabilidades de seguridad externas.  │
+│                                                                                                                                                                                  │
+│  **2. Control y Personalización (Control & Customization)**                                                                                                                      │
+│  *   **Ajuste Fino (Fine-tuning) Profundo:** Se tiene la capacidad de realizar ajustes finos del modelo (fine-tuning) con conjuntos de datos privados, permitiendo adaptar el    │
+│  modelo específicamente a el dominio de la empresa.                                                                                                                              │
+│  *   **Modificación de Arquitectura:** Permite experimentar y modificar la arquitectura del modelo para optimizar su rendimiento para tareas específicas, algo limitado en las   │
+│  APIs genéricas.                                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│  **3. Latencia y Rendimiento (Latency & Performance)**                                                                                                                           │
+│  *   **Baja Latencia:** Al eliminar la latencia de red asociada a la comunicación con servidores externos, las inferencias (generación de respuestas) se realizan de manera más  │
+│  rápida, lo cual es vital para aplicaciones en tiempo real.                                                                                                                      │
+│  *   **Inferencia Continua:** El procesamiento puede ocurrir sin interrupciones, facilitando la integración en sistemas internos donde la conectividad constante es crítica.     │
+│                                                                                                                                                                                  │
+│  **4. Costo a Largo Plazo (Long-Term Cost)**                                                                                                                                     │
+│  *   **Eliminación de Costos por Token:** Se elimina el coste recurrente asociado al uso de tokens por API, lo que genera un ahorro significativo en entornos con alto volumen   │
+│  de uso.                                                                                                                                                                         │
+│  *   **Modelo de Coste Predecible:** Aunque la inversión inicial en hardware es significativa, los costes operativos son predecibles y no están sujetos a las fluctuaciones de   │
+│  precios dinámicos de las APIs.                                                                                                                                                  │
+│                                                                                                                                                                                  │
+│  ***                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│  ### ❌ Desafíos Clave de los LLMs Locales (Desafíos)                                                                                                                            │
+│                                                                                                                                                                                  │
+│  Los desafíos se centran principalmente en la infraestructura, los recursos y la complejidad de la gestión.                                                                      │
+│                                                                                                                                                                                  │
+│  **1. Requisitos de Hardware (Hardware Requirements)**                                                                                                                           │
+│  *   **Inversión Inicial Elevada:** Se requiere una inversión significativa en hardware potente (GPUs de alta gama, mucha VRAM) para alojar y ejecutar modelos grandes de        │
+│  manera eficiente.                                                                                                                                                               │
+│  *   **Escalabilidad Limitada:** La capacidad de escalar el procesamiento se limita a la infraestructura física existente, lo que puede ser un cuello de botella para grandes    │
+│  volúmenes de usuarios concurrentes.                                                                                                                                             │
+│                                                                                                                                                                                  │
+│  **2. Mantenimiento y Operación (Maintenance & Operation)**                                                                                                                      │
+│  *   **Complejidad Operativa:** La gestión, el despliegue, la monitorización y el mantenimiento de modelos complejos requieren equipos especializados en MLOps y DevOps.         │
+│  *   **Actualización del Modelo:** Mantener los modelos actualizados con las últimas versiones o mejoras de parches requiere un proceso interno y manual, en lugar de depender   │
+│  de las actualizaciones del proveedor de la API.                                                                                                                                 │
+│                                                                                                                                                                                  │
+│  **3. Acceso a Conocimiento y Modelos Avanzados (Access to Advanced Models)**                                                                                                    │
+│  *   **Acceso Limitado a Modelos de Vanguardia:** Los modelos más grandes y avanzados (SOTA) suelen ser más accesibles y ofrecen un rendimiento superior a aquellos que se       │
+│  pueden ejecutar localmente con recursos limitados.                                                                                                                              │
+│  *   **Curva de Aprendizaje:** El personal interno debe tener un alto nivel de experiencia técnica para configurar e implementar soluciones de LLMs locales de manera efectiva.  │
+│                                                                                                                                                                                  │
+│  ---                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│  ### 📊 Resumen Comparativo                                                                                                                                                      │
+│                                                                                                                                                                                  │
+│  | Aspecto | LLMs Locales (On-Premise) | LLMs via API (Nube) |                                                                                                                   │
+│  | :--- | :--- | :--- |                                                                                                                                                          │
+│  | **Privacidad** | **Máxima.** Los datos permanecen dentro del perímetro seguro. | Moderada. Requiere confianza en la política de privacidad del proveedor. |                   │
+│  | **Control** | **Total.** Control absoluto sobre el modelo, la infraestructura y el código. | Limitado. Control a través de las configuraciones de la API. |                   │
+│  | **Latencia** | **Baja.** Inferencias extremadamente rápidas, sin latencia de red. | Dependiente de la latencia de la red y el procesamiento remoto. |                         │
+│  | **Costo** | **Alto** en inversión inicial de hardware; **Bajo** en coste operativo a gran escala. | **Variable** y recurrente (pago por uso/tokens). |                        │
+│  | **Escalabilidad** | Limitada por la infraestructura física existente. | **Alta.** Escalabilidad inmediata a través de la infraestructura de la nube. |                        │
+│  | **Mantenimiento** | Alto (Requiere equipo de MLOps). | Bajo (El proveedor gestiona el mantenimiento del modelo). |                                                            │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────────────────────── 📋 Task Completion ───────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Task Completed                                                                                                                                                                  │
+│  Name: Investiga las principales ventajas de ejecutar modelos de lenguaje (LLMs)                                                                                                 │
+│      de forma local frente al uso de APIs en la nube. Considera aspectos como privacidad,                                                                                        │
+│      costo, latencia y control.                                                                                                                                                  │
+│  Agent: Investigador de Mercado Tecnológico                                                                                                                                      │
+│                                                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────── 📋 Task Started ─────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Task Started                                                                                                                                                                    │
+│  Name: Toma los resultados de la investigación sobre LLMs locales y redacta                                                                                                      │
+│      un artículo breve de 2 párrafos dirigido a desarrolladores que quieren empezar a usar Ollama.                                                                               │
+│  ID: 45bf940b-2248-4e1b-94e6-18841291e7d5                                                                                                                                        │
+│                                                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────── 🤖 Agent Started ────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Agent: Redactor de Contenido Técnico                                                                                                                                            │
+│                                                                                                                                                                                  │
+│  Task: Toma los resultados de la investigación sobre LLMs locales y redacta                                                                                                      │
+│      un artículo breve de 2 párrafos dirigido a desarrolladores que quieren empezar a usar Ollama.                                                                               │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+[Finalize] todos_count=0, todos_with_results=0
+╭───────────────────────────────────────────────────────────────────────────── ✅ Agent Final Answer ──────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Agent: Redactor de Contenido Técnico                                                                                                                                            │
+│                                                                                                                                                                                  │
+│  Final Answer:                                                                                                                                                                   │
+│   Artículo Breve: Empezar a usar Ollama localmente: Ventajas y Desafíos                                                                                                          │
+│                                                                                                                                                                                  │
+│  Los desarrolladores que pretenden aplicar Modelos de Lenguajes (LLMs) localmente en lugar de utilizar APIs en la nube encontrarán varias ventajas y desafíos que serán          │
+│  importantes por considerar al tomar esta decisión.                                                                                                                              │
+│                                                                                                                                                                                  │
+│  Los beneficios principales de ejecutar LLMs de forma local se centran en la autonomía, la seguridad y la personalización del sistema. La privacidad y seguridad de los datos,   │
+│  el control y personalización del modelo, la latencia y rendimiento superior y el costo a largo plazo son factores clave que poderosamente favorecen la ejecución de LLMs        │
+│  localmente. Sin embargo, los desafíos se centran principalmente en la infraestructura, los recursos y la complejidad de la gestión, como el requisito de hardware potente y la  │
+│  inversión inicial elevada, la necesidad de equipo especializado para la gestión del modelo y la actualización del mismo, y la acceso limitado a modelos de vanguardia.          │
+│                                                                                                                                                                                  │
+│  Las siguientes tablas muestran una comparativa detallada entre las entregas de LLMs en la nube y de manera local:                                                               │
+│                                                                                                                                                                                  │
+│  | Aspecto | LLMs Locales (On-Premise) | LLMs via API (Nube) |                                                                                                                   │
+│  | --- | --- | --- |                                                                                                                                                             │
+│  | **Privacidad** | **Máxima.** Los datos permanecen dentro del perímetro seguro. | Moderada. Requiere confianza en la política de privacidad del proveedor. |                   │
+│  | **Control** | **Total.** Control absoluto sobre el modelo, la infraestructura y el código. | Limitado. Control a través de las configuraciones de la API. |                   │
+│  | **Latencia** | **Baja.** Inferencias extremadamente rápidas, sin latencia de red. | Dependiente de la latencia de la red y el procesamiento remoto. |                         │
+│  | **Costo** | **Alto** en inversión inicial de hardware; **Bajo** en coste operativo a gran escala. | **Variable** y recurrente (pago por uso/tokens). |                        │
+│  | **Escalabilidad** | Limitada por la infraestructura física existente. | **Alta.** Escalabilidad inmediata a través de la infraestructura de la nube. |                        │
+│  | **Mantenimiento** | Alto (Requiere equipo de MLOps). | Bajo (El proveedor gestiona el mantenimiento del modelo). |                                                            │
+│                                                                                                                                                                                  │
+│  Como investigador de mercado tecnológico, he presentado un resumen estructurado de las principales ventajas y desafíos de ejecutar Modelos de Lenguaje (LLMs) de forma local    │
+│  en comparación con el uso de APIs en la nube. Si bien hay beneficios importantes para el uso de LLMs de forma local, también hay ventajas significativas para utilizar API en   │
+│  la nube, incluyendo la alta escalabilidad y la baja complejidad administrativa. Debido a esto, la decisión debe ser tomada analizando el equilibrio entre la eficiencia         │
+│  operativa, la seguridad de los datos y la escalabilidad, así como las necesidades específicas de cada organización.                                                             │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────────────────────────────────── 📋 Task Completion ───────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Task Completed                                                                                                                                                                  │
+│  Name: Toma los resultados de la investigación sobre LLMs locales y redacta                                                                                                      │
+│      un artículo breve de 2 párrafos dirigido a desarrolladores que quieren empezar a usar Ollama.                                                                               │
+│  Agent: Redactor de Contenido Técnico                                                                                                                                            │
+│                                                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────── Crew Completion ─────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Crew Execution Completed                                                                                                                                                        │
+│  Name: crew                                                                                                                                                                      │
+│  ID: 30c10431-e68a-4d0b-8aab-3440a025c441                                                                                                                                        │
+│  Final Output:  Artículo Breve: Empezar a usar Ollama localmente: Ventajas y Desafíos                                                                                            │
+│                                                                                                                                                                                  │
+│  Los desarrolladores que pretenden aplicar Modelos de Lenguajes (LLMs) localmente en lugar de utilizar APIs en la nube encontrarán varias ventajas y desafíos que serán          │
+│  importantes por considerar al tomar esta decisión.                                                                                                                              │
+│                                                                                                                                                                                  │
+│  Los beneficios principales de ejecutar LLMs de forma local se centran en la autonomía, la seguridad y la personalización del sistema. La privacidad y seguridad de los datos,   │
+│  el control y personalización del modelo, la latencia y rendimiento superior y el costo a largo plazo son factores clave que poderosamente favorecen la ejecución de LLMs        │
+│  localmente. Sin embargo, los desafíos se centran principalmente en la infraestructura, los recursos y la complejidad de la gestión, como el requisito de hardware potente y la  │
+│  inversión inicial elevada, la necesidad de equipo especializado para la gestión del modelo y la actualización del mismo, y la acceso limitado a modelos de vanguardia.          │
+│                                                                                                                                                                                  │
+│  Las siguientes tablas muestran una comparativa detallada entre las entregas de LLMs en la nube y de manera local:                                                               │
+│                                                                                                                                                                                  │
+│  | Aspecto | LLMs Locales (On-Premise) | LLMs via API (Nube) |                                                                                                                   │
+│  | --- | --- | --- |                                                                                                                                                             │
+│  | **Privacidad** | **Máxima.** Los datos permanecen dentro del perímetro seguro. | Moderada. Requiere confianza en la política de privacidad del proveedor. |                   │
+│  | **Control** | **Total.** Control absoluto sobre el modelo, la infraestructura y el código. | Limitado. Control a través de las configuraciones de la API. |                   │
+│  | **Latencia** | **Baja.** Inferencias extremadamente rápidas, sin latencia de red. | Dependiente de la latencia de la red y el procesamiento remoto. |                         │
+│  | **Costo** | **Alto** en inversión inicial de hardware; **Bajo** en coste operativo a gran escala. | **Variable** y recurrente (pago por uso/tokens). |                        │
+│  | **Escalabilidad** | Limitada por la infraestructura física existente. | **Alta.** Escalabilidad inmediata a través de la infraestructura de la nube. |                        │
+│  | **Mantenimiento** | Alto (Requiere equipo de MLOps). | Bajo (El proveedor gestiona el mantenimiento del modelo). |                                                            │
+│                                                                                                                                                                                  │
+│  Como investigador de mercado tecnológico, he presentado un resumen estructurado de las principales ventajas y desafíos de ejecutar Modelos de Lenguaje (LLMs) de forma local    │
+│  en comparación con el uso de APIs en la nube. Si bien hay beneficios importantes para el uso de LLMs de forma local, también hay ventajas significativas para utilizar API en   │
+│  la nube, incluyendo la alta escalabilidad y la baja complejidad administrativa. Debido a esto, la decisión debe ser tomada analizando el equilibrio entre la eficiencia         │
+│  operativa, la seguridad de los datos y la escalabilidad, así como las necesidades específicas de cada organización.                                                             │
+│                                                                                                                                                                                  │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+### Resultado Final ###
+
+
+ Artículo Breve: Empezar a usar Ollama localmente: Ventajas y Desafíos
+
+Los desarrolladores que pretenden aplicar Modelos de Lenguajes (LLMs) localmente en lugar de utilizar APIs en la nube encontrarán varias ventajas y desafíos que serán importantes por considerar al tomar esta decisión.
+
+Los beneficios principales de ejecutar LLMs de forma local se centran en la autonomía, la seguridad y la personalización del sistema. La privacidad y seguridad de los datos, el control y personalización del modelo, la latencia y rendimiento superior y el costo a largo plazo son factores clave que poderosamente favorecen la ejecución de LLMs localmente. Sin embargo, los desafíos se centran principalmente en la infraestructura, los recursos y la complejidad de la gestión, como el requisito de hardware potente y la inversión inicial elevada, la necesidad de equipo especializado para la gestión del modelo y la actualización del mismo, y la acceso limitado a modelos de vanguardia.
+
+Las siguientes tablas muestran una comparativa detallada entre las entregas de LLMs en la nube y de manera local:
+
+| Aspecto | LLMs Locales (On-Premise) | LLMs via API (Nube) |
+| --- | --- | --- |
+| **Privacidad** | **Máxima.** Los datos permanecen dentro del perímetro seguro. | Moderada. Requiere confianza en la política de privacidad del proveedor. |
+| **Control** | **Total.** Control absoluto sobre el modelo, la infraestructura y el código. | Limitado. Control a través de las configuraciones de la API. |
+| **Latencia** | **Baja.** Inferencias extremadamente rápidas, sin latencia de red. | Dependiente de la latencia de la red y el procesamiento remoto. |
+| **Costo** | **Alto** en inversión inicial de hardware; **Bajo** en coste operativo a gran escala. | **Variable** y recurrente (pago por uso/tokens). |
+| **Escalabilidad** | Limitada por la infraestructura física existente. | **Alta.** Escalabilidad inmediata a través de la infraestructura de la nube. |
+| **Mantenimiento** | Alto (Requiere equipo de MLOps). | Bajo (El proveedor gestiona el mantenimiento del modelo). |
+
+Como investigador de mercado tecnológico, he presentado un resumen estructurado de las principales ventajas y desafíos de ejecutar Modelos de Lenguaje (LLMs) de forma local en comparación con el uso de APIs en la nube. Si bien hay beneficios importantes para el uso de LLMs de forma local, también hay ventajas significativas para utilizar API en la nube, incluyendo la alta escalabilidad y la baja complejidad administrativa. Debido a esto, la decisión debe ser tomada analizando el equilibrio entre la eficiencia operativa, la seguridad de los datos y la escalabilidad, así como las necesidades específicas de cada organización.
+╭───────────────────────────────────────────────────────────────────────────────── Tracing Status ─────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                  │
+│  Info: Tracing is disabled.                                                                                                                                                      │
+│                                                                                                                                                                                  │
+│  To enable tracing, do any one of these:                                                                                                                                         │
+│  • Set tracing=True in your Crew/Flow code                                                                                                                                       │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file                                                                                                                   │
+│  • Run: crewai traces enable                                                                                                                                                     │
+│                                                                                                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+(venv) (base) daniel@Daniels-MacBook-Air CrewAI % 
