@@ -425,27 +425,7 @@ El flujo conceptual sería:
 
 ## Ventajas
 
-### 1. Abstracción sencilla para sistemas multiagente
-
-Los conceptos principales son fáciles de entender:
-
-```text
-Agent
-→ ¿Quién realiza el trabajo?
-
-Task
-→ ¿Qué trabajo debe realizar?
-
-Crew
-→ ¿Qué agentes colaboran?
-
-Flow
-→ ¿Cómo se controla la aplicación?
-```
-
-Esto facilita la construcción de sistemas multiagente.
-
-### 2. Especialización mediante roles
+### 1. Especialización mediante roles
 
 Cada agente puede especializarse en una responsabilidad concreta.
 
@@ -462,13 +442,13 @@ Administrador
 
 Esto permite dividir problemas complejos en tareas más pequeñas.
 
-### 3. Soporte nativo para sistemas multiagente
+### 2. Soporte nativo para sistemas multiagente
 
 La colaboración entre agentes es uno de los principales objetivos del framework.
 
 El desarrollador no necesita implementar desde cero toda la lógica de coordinación.
 
-### 4. Orquestación mediante Flows
+### 3. Orquestación mediante Flows
 
 Los `Flows` permiten tener un mayor control sobre la aplicación:
 
@@ -479,35 +459,7 @@ Los `Flows` permiten tener un mayor control sobre la aplicación:
 * Ramificaciones.
 * Integración entre diferentes Crews.
 
-### 5. Integración con herramientas
-
-Los agentes pueden utilizar herramientas externas y funciones personalizadas.
-
-Esto permite pasar de:
-
-```text
-LLM
- ↓
-Generar texto
-```
-
-a:
-
-```text
-Agente
- ↓
-Analizar problema
- ↓
-Seleccionar herramienta
- ↓
-Ejecutar acción
- ↓
-Analizar resultado
- ↓
-Continuar
-```
-
-### 6. Facilidad para crear prototipos
+### 4. Facilidad para crear prototipos
 
 La abstracción de alto nivel permite construir prototipos de sistemas multiagente relativamente rápido.
 
@@ -515,23 +467,7 @@ La abstracción de alto nivel permite construir prototipos de sistemas multiagen
 
 ## Desventajas
 
-### 1. Mayor complejidad
-
-No todos los problemas necesitan múltiples agentes.
-
-Para una tarea sencilla puede ser suficiente:
-
-```text
-Usuario
-   ↓
-LLM
-   ↓
-Respuesta
-```
-
-Agregar varios agentes puede introducir complejidad innecesaria.
-
-### 2. Mayor consumo de recursos
+### 1. Mayor consumo de recursos
 
 Cada agente puede generar llamadas adicionales al modelo.
 
@@ -562,7 +498,7 @@ Esto puede aumentar:
 * Costos.
 * Uso de recursos.
 
-### 3. Comportamiento no determinista
+### 2. Comportamiento no determinista
 
 Al estar basados en modelos de lenguaje, los agentes pueden producir resultados diferentes ante situaciones similares.
 
@@ -573,7 +509,7 @@ Por ejemplo, pueden:
 * Delegar tareas de manera diferente.
 * Necesitar diferentes cantidades de iteraciones.
 
-### 4. Debugging más complejo
+### 3. Debugging más complejo
 
 A medida que aumenta el número de agentes, también aumenta la dificultad para identificar el origen de un problema.
 
@@ -593,17 +529,6 @@ Crew B
 ```
 
 Cuando ocurre un error, puede ser necesario analizar diferentes agentes, tareas, herramientas y pasos del workflow.
-
-### 5. Diseño de roles y tareas
-
-Una mala definición de roles puede generar:
-
-* Duplicación de trabajo.
-* Responsabilidades ambiguas.
-* Resultados inconsistentes.
-* Comunicación innecesaria entre agentes.
-
-Por esta razón, diseñar correctamente los roles y las tareas es fundamental.
 
 ---
 
