@@ -730,16 +730,8 @@ flowchart TD
 
 
 ## Referencias
-
-https://www.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai
-
-https://www.ibm.com/think/topics/crew-ai
-
-https://www.ibm.com/mx-es/think/topics/crew-ai
-
-
-<https://www.markdownguide.org>
-<fake@example.com>
-
-https://medium.com/@tahirbalarabe2/what-is-crew-ai-collaborative-autonomous-agent-framework-cbffc7926e1b
-
+* Balarabe, T. (s.f.). *What is Crew AI? Collaborative Autonomous Agent Framework*. Medium. https://medium.com/@tahirbalarabe2/what-is-crew-ai-collaborative-autonomous-agent-framework-cbffc7926e1b
+* CrewAI. (s.f.). *Introduction*. CrewAI Documentation. https://docs.crewai.com/v1.15.17/en/introduction
+* CrewAI. (s.f.). *Memory*. CrewAI Documentation. https://docs.crewai.com/v1.15.17/en/concepts/memory
+* DeepLearning.AI. (s.f.). *Multi AI Agent Systems with CrewAI*. https://www.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai
+* IBM. (s.f.). *What is CrewAI?* Think. https://www.ibm.com/think/topics/crew-ai
